@@ -28,6 +28,6 @@ void print_process(const Process *p){
         printf("Processo e nulo\n");
         return;
     }
-    printf("PID: %d, estado: %d, Tempo restante: %d\n", 
-           p->pid, p->state, p->remaining_time);
+    printf("PID: %d, estado: %d, Tempo restante: %d, Quantum: %d\n", 
+           p->pid, p->state, p->remaining_time, p->quantum_remaining);
 }

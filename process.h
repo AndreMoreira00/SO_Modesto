@@ -15,8 +15,7 @@ typedef struct Process {
     int remaining_time;     // Tempo restante para término
     int quantum_remaining;  // Tempo restante do quantum
     struct Process *next;   // Ponteiro para o próximo processo
-} Process;
-
+} Process; 
 // Funções obrigatórias
 Process* create_process(int pid, int total_time);
 void destroy_process(Process *p);
